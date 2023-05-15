@@ -1,13 +1,13 @@
 import { Form, FormContainer, Input, StyledLabel, SendButton, BackToLoginButton } from "./styled";
 
-function TelaCadastro() {
+function TelaCadastro(props) {
   const cadastrar = () => {
-    // validação de cadastro ainda será visto mais pra frente no curso
+    props.mudarTela("principal");
     alert("Cadastro realizado com sucesso, mas falta fazer a prática 3 e remover esse alerta")
   }
 
   const mostrarTelaLogin = () => {
-    alert("Faça a prática 2 e remova esse alerta")
+    props.mudarTela("login");
   }
 
   return (
